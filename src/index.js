@@ -27,7 +27,19 @@ const json = {
     },
     name: "graph2",
     key: 1
-  }],
+  	},
+  	{
+  		x: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  		y: [0, 4, 5, 6, 8, 2, 9, 5, 2, 6, 4],
+  		type: 'bar',
+  		name: 'graph3',
+  		marker: {
+	    	color: 'rgb(49,130,189)',
+	    	opacity: 0.7
+  		},
+  		key: 2
+		}
+  ],
 
   layout: {
     xaxis: {
