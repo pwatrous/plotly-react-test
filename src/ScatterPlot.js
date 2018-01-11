@@ -7,13 +7,14 @@ const Plot = createPlotlyComponent(Plotly);
 
 class ScatterPlot extends Component {
   render() {
-    const selectedChart = [this.props.json.data[this.props.selectedData]];
+
+    const { json, selectedData } = this.props;
 
     return (
       <div className="plot">
         <Plot
-          data={selectedChart}
-          layout={this.props.json.layout}
+          data={[json.data[selectedData]]}
+          layout={json.layout}
         />
       </div>
     );
